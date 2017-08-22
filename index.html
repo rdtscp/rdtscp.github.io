@@ -9,55 +9,172 @@
         .text {
             font-size: 10px;
         }
+        .edu-entry {
+          border-left: 1px solid green;
+          padding-left: 45px;
+        }
+        .work-entry {
+          border-left: 1px solid blue;
+          padding-left: 45px;
+        }
+        a {
+          color: black;
+        }
     </style>
   </head>
   <body>
-	<div class="columns">
-		<div class="column">
-		</div>
-		<div class="column is-two-thirds">
+      <div class="columns">
+          <div class="column">
+          </div>
+          <div class="column is-two-thirds">
             <section class="hero">
-				<div class="hero-body">
-					<div class="container">
-					<h1 class="title">
-						Alexander Wilson
-					</h1>
-					<h2 class="subtitle">
-						Software Developer
-					</h2>
-					</div>
+              <div class="hero-body">
+                <div class="container">
+                  <h1 class="title is-1">
+                    Alexander Wilson
+                  </h1>
+                  <h2 class="subtitle">
+                    Software Developer
+                  </h2>
                 </div>
+              </div>
+        
+              <div class="box" style="padding: 5px;">
+                <pre>
+        
+            {
+              name: 'Alexander Wilson',
+              dob: '29-01-1996',
+              email: 'acwilson96@protonmail.com',
+              country: 'united_kingdom',
+              city: 'edinburgh',
+              interests: [
+                'food',
+                'travelling',
+                'programming',
+                'movies',
+                'skateboarding',
+                'bmxing',
+                'skiing',
+                'dota_2'
+              ]
+            }
+                            </pre>
+              </div>
+              <br>
+              <h3 class="title is-3">
+                <span class="icon is-large">
+                  <i class="fa  fa-graduation-cap"></i>
+                </span> &nbsp;
+                <u>Education</u></h3>
+              <div class="edu-entry">
+                <h4 class="is-4"><span class="icon"><a onclick="hideDiv('edb_compsci')" id="edb_compsci_caret" class="fa fa-caret-down"></a></span><b> BSc Computer Science,</b>  <small>University of Edinburgh</small>  </h4>
+                <div id="edb_compsci">
+                  <h7 class="title is-7">Sept 2014 - Current </h7>
+                  <div class="content">
+                    <ul>
+                      <li>Computer Security</li>
+                      <li>Computer Networking</li>
+                      <li>Computer Architecture</li>
+                      <li>Operating Systems</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              
+              <h3 class="title is-3">
+                <span class="icon is-large">
+                  <i class="fa   fa-briefcase"></i>
+                </span> &nbsp;<u>Work Experience</u></h3>
+              <div class="work-entry">
                 
-                <h4> About Me </h4>
-
-                <div style="padding: 5px;">
-                    <pre>
-
-    {
-      name: 'Alexander Wilson',
-      dob: '29-01-1996',
-      email: 'acwilson96@protonmail.com',
-      country: 'united_kingdom',
-      city: 'edinburgh',
-      interests: [
-        'food',
-        'travelling',
-        'programming',
-        'movies',
-        'skateboarding',
-        'bmxing',
-        'skiing',
-        'dota_2'
-      ]
-    }
-                    </pre>
+                <h4><span class="icon"><a onclick="hideDiv('kal_2017')" id="kal_2017_caret" class="fa fa-caret-down"></a></span><b> Software Engineering Intern</b></h4>
+                <div id="kal_2017">
+                  <h5><b>KAL,</b> Edinburgh</h5>
+                  <h7 class="title is-7">June 2017 - Sept 2017 </h7>
+                  <div class="content">
+                    <blockquote>
+                    Gained Experience Using:
+                    <ul>
+                      <li>C#</li>
+                      <li>C++</li>
+                      <li>.NET</li>
+                    </ul>
+                    </blockquote>
+                  </div>
                 </div>
-                <br>
-                <h4> Education </h4>
+              </div>
+              <br>
+              <div class="work-entry">
+                <h4><span class="icon"><a onclick="hideDiv('kp')" id="kp_caret" class="fa fa-caret-down"></a></span><b>Kitchen Porter</b></h4>
+                <div id="kp">
+                  <h5><b>ROYAL BLIND: Braeside House,</b> Edinburgh</h5>
+                  <h7 class="title is-7">July 2015 - Sept 2016 </h7>
+                  <div class="content">
+                      <blockquote>Responsibilities include making sure that the kitchen and food preparation areas are kept clean to a very high standard. I also aided my colleagues in food preparation.</blockquote>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="work-entry">
+                <h4><span class="icon"><a onclick="hideDiv('acca_freelance')" id="acca_freelance_caret" class="fa fa-caret-down"></a></span><b>Freelance Work</b></h4>
+                <div id="acca_freelance">
+                  <h5><b>ACCA,</b> Glasgow</h5>
+                  <h7 class="title is-7">Nov 2014</h7>
+                  <div class="content">
+                    <blockquote>My task was to dismantle company machines such as laptops and desktops so that hardware such as Hard Drives containing company data could be disposed of responsibly.</blockquote>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="work-entry">
+                <h4><span class="icon"><a onclick="hideDiv('acca_london')" id="acca_london_caret" class="fa fa-caret-down"></a></span><b>Work Experience</b></h4>
+                <div id="acca_london">
+                  <h5><b>ACCA,</b> London</h5>
+                  <h7 class="title is-7">Oct 2013</h7>
+                  <div class="content">
+                    <blockquote>Experience included auditing PC numbers for asset reconciliation, checking network ports for patch panel maintenance, and setting up conference rooms with microphones and webcam equipment for use with Microsoft Lync.</blockquote>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="work-entry">
+                <h4><span class="icon"><a onclick="hideDiv('napier')" id="napier_caret" class="fa fa-caret-down"></a></span><b>Short Intern</b></h4>
+                <div id="napier">
+                  <h5><b>NAPIER University,</b> Edinburgh</h5>
+                  <h7 class="title is-7">June 2013</h7>
+                  <div class="content">
+                    <blockquote>Spent a week working with an arduino board to create circuits as part of a robotics bootcamp.</blockquote>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+              <h3 class="title is-3">
+                  <span class="icon is-large">
+                    <i class="fa fa-code"></i>
+                  </span> &nbsp;
+                  <u>Skills</u></h3>
 
             </section>
-		</div>
-		<div class="column"></div>
-	</div>
+          </div>
+          <div class="column"></div>
+        </div>
+        
+
   </body>
+  <script>
+    function hideDiv(divID) {
+      if (document.getElementById(divID).style.display == 'none') {
+        document.getElementById(divID).style.display = 'inline';
+        document.getElementById(divID + '_caret').classList.remove('fa-caret-right');
+        document.getElementById(divID + '_caret').classList.add('fa-caret-down');
+      } else {
+        document.getElementById(divID).style.display = 'none';
+        document.getElementById(divID + '_caret').classList.remove('fa-caret-down');
+        document.getElementById(divID + '_caret').classList.add('fa-caret-right');
+      }
+    }
+  </script>
 </html>
