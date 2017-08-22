@@ -1,2 +1,2 @@
 # acwilson96.github.io
-Webpage with information on me.
+Webpage with information about me.
