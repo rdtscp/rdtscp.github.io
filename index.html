@@ -21,30 +21,32 @@
         a {
           color: black;
         }
-        #top_but {
+        #contents {
           position: fixed;
-          bottom: 20px;
-          right: 30px;
-          z-index: 99;
-          border: none;
-          outline: none;
-        
-          cursor: pointer;
+          bottom: 15px;
+          right: 15px;
           padding: 15px;
-          border-radius: 10px;
         }
     </style>
   </head>
   <body>
 
-      <div id="top">
-      <a class="button" id="top_but" href="#top"><span class="icon is-large"><i class="fa fa-caret-up"></i></span></a>
+      <div class="box" id="contents">
+        <div class="content">
+          <ul>
+            <li style="margin: 5px;"><a href="#top"> JSON </a></li>
+            <li style="margin: 5px;"><a href="#education"> Education </a></li>
+            <li style="margin: 5px;"><a href="#work_experience"> Work Experience </a></li>
+            <li style="margin: 5px;"><a href="#skills"> Skills </a></li>
+          </ul>
+        </div>
+      </div>
 
       <div class="columns">
           <div class="column">
           </div>
           <div class="column is-two-thirds">
-            <section class="hero">
+            <section class="hero" id="top">
               <div class="hero-body">
                 <div class="container">
                   <h1 class="title is-1">
@@ -80,7 +82,7 @@
                             </pre>
               </div>
               <br>
-              <h3 class="title is-3">
+              <h3 id="education" class="title is-3">
                 <span class="icon is-large">
                   <i class="fa  fa-graduation-cap"></i>
                 </span> &nbsp;
@@ -101,7 +103,7 @@
               </div>
               <hr>
               
-              <h3 class="title is-3">
+              <h3 id="work_experience" class="title is-3">
                 <span class="icon is-large">
                   <i class="fa   fa-briefcase"></i>
                 </span> &nbsp;<u>Work Experience</u></h3>
@@ -169,7 +171,7 @@
               </div>
 
               <hr>
-              <h3 class="title is-3">
+              <h3 id="skills" class="title is-3">
                   <span class="icon is-large">
                     <i class="fa fa-code"></i>
                   </span> &nbsp;
