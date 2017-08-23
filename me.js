@@ -1,4 +1,5 @@
       /* JavaScript constant representing a bit of me */
+      
       const alex = {
           name: 'Alexander Wilson',
           dob: '29-01-1996',
