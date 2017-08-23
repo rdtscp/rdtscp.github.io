@@ -27,15 +27,23 @@
           right: 15px;
           padding: 15px;
         }
+	.var {
+	  font-family: Consolas, monaco, monospace;
+	  font-size: 21px;
+  	  font-style: normal;
+	  font-variant: normal;
+	  font-weight: 400;
+	  line-height: 30px;
+	}
     </style>
   </head>
   <body>
 
       <div class="box" id="contents">
-	<a class="button is-small" onclick="toggleContents()">-</a>
+	<a class="button is-small" id="contents_minimax" onclick="toggleContents()">-</a>
         <div class="content" id="contents_pane">
           <ul>
-            <li style="margin: 5px;"><a href="#top"> <pre>const alex</pre> </a></li>
+            <li style="margin: 5px;"><a href="#top" class="var">const alex</a></li>
             <li style="margin: 5px;"><a href="#education"> Education </a></li>
             <li style="margin: 5px;"><a href="#work_experience"> Work Experience </a></li>
             <li style="margin: 5px;"><a href="#skills"> Skills </a></li>
@@ -204,8 +212,10 @@
     function toggleContents() {
         if (document.getElementById("contents_pane").style.display == 'none') {
 	    document.getElementById("contents_pane").style.display = 'inline';
+	    document.getElementById("contents_minimax").innerHtml = '-';
 	} else {
 	    document.getElementById("contents_pane").style.display = 'none';
+	    document.getElementById("contents_minimax").innerHtml = '+';
 	}
     }
 
