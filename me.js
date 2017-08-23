@@ -1,4 +1,5 @@
-    const alex = {
+
+  const alex = {
       name: 'Alexander Wilson',
       dob: '29-01-1996',
       email: 'acwilson96@protonmail.com',
@@ -18,3 +19,4 @@
         'dota_2'
       ]
     }
+    
