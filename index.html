@@ -2,8 +2,8 @@
 <html>
   <head>
    <meta charset="utf-8">
-    <title>alex@wilson: ~$</title>
-    <link rel="icon" href="terminal.png" type="image/png" sizes="16x16">
+    <title>alex </title>
+    <link rel="icon" href="user.png" type="image/png" sizes="16x16">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
     <style>
@@ -18,6 +18,10 @@
           border-left: 1px solid blue;
           padding-left: 45px;
         }
+        .skill-entry {
+          border-left: 1px solid purple;
+          padding-left: 45px;
+        }
         a {
           color: black;
         }
@@ -27,25 +31,26 @@
           right: 15px;
           padding: 15px;
         }
-		.var {
-	      font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-		  font-size: 11px;
-		}
+        .var {
+          font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+          font-size: 15px;
+        }
     </style>
   </head>
   <body>
 
       <div class="box" id="contents">
-		<a class="button is-small" id="contents_minimax" onclick="toggleContents()">-</a>
-        <div class="content" id="contents_pane">
-          <ul>
-            <li style="margin: 5px;"><a href="#top" class="var">const alex</a></li>
-            <li style="margin: 5px;"><a href="#education"> Education </a></li>
-            <li style="margin: 5px;"><a href="#work_experience"> Work Experience </a></li>
-            <li style="margin: 5px;"><a href="#skills"> Skills </a></li>
-          </ul>
-        </div>
-      </div>
+          <a class="button is-small" id="contents_minimax" onclick="toggleContents()">-</a>
+              <div class="content" id="contents_pane">
+                <ul>
+                  <li style="margin: 5px;"><a href="#top" class="var">const alex</a></li>
+                  <li style="margin: 5px;"><a href="#education"> Education </a></li>
+                  <li style="margin: 5px;"><a href="#work_experience"> Work Experience </a></li>
+                  <li style="margin: 5px;"><a href="#skills"> Skills </a></li>
+                  <li style="margin: 5px;"><a href="#projects"> Projects </a></li>
+                </ul>
+              </div>
+            </div>
 
       <div class="columns">
           <div class="column">
@@ -65,29 +70,7 @@
         
               
               <div class="box" style="padding: 5px;">
-                <pre>
-        
-            const alex = {
-              name: 'Alexander Wilson',
-              dob: '29-01-1996',
-              email: 'acwilson96@protonmail.com',
-              country: 'united_kingdom',
-              city: 'edinburgh',
-              interests: [
-                'food',
-                'travelling',
-		        'computer_security',
-				'web_dev',
-			    'computer_architecture',
-                'programming',
-                'movies',
-                'skateboarding',
-                'bmxing',
-                'skiing',
-                'dota_2'
-              ]
-            }
-                            </pre>
+                <pre id="me_js"></pre>
               </div>
               <br>
               <h3 id="education" class="title is-3">
@@ -99,17 +82,17 @@
                 <h4 class="is-4"><span class="icon"><a onclick="hideDiv('edb_compsci')" id="edb_compsci_caret" class="fa fa-caret-down"></a></span><b> BSc Computer Science,</b>  <small>University of Edinburgh</small>  </h4>
                 <div id="edb_compsci">
                   <h7 class="title is-7">Sept 2014 - Current </h7>
-		  		  <div class="content">
-   		    		<blockquote>
-		      		  Classes Include:
+                  <div class="content">
+                    <blockquote>
+                      Classes Include:
                       <ul>
                         <li>Computer Security</li>
                         <li>Computer Networking</li>
                         <li>Computer Architecture</li>
                         <li>Operating Systems</li>
                       </ul>
-  	            	</blockquote>
-	          	  </div>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
               <hr>
@@ -118,8 +101,7 @@
                 <span class="icon is-large">
                   <i class="fa   fa-briefcase"></i>
                 </span> &nbsp;<u>Work Experience</u></h3>
-              <div class="work-entry">
-                
+              <div class="work-entry">  
                 <h4><span class="icon"><a onclick="hideDiv('kal_2017')" id="kal_2017_caret" class="fa fa-caret-down"></a></span><b> Software Engineering Intern</b></h4>
                 <div id="kal_2017">
                   <h5><b>KAL,</b> Edinburgh</h5>
@@ -160,7 +142,7 @@
               </div>
               <br>
               <div class="work-entry">
-                <h4><span class="icon"><a onclick="hideDiv('acca_london')" id="acca_london_caret" class="fa fa-caret-down"></a></span><b>Desktop Support Intern</b></h4>
+                <h4><span class="icon"><a onclick="hideDiv('acca_london')" id="acca_london_caret" class="fa fa-caret-down"></a></span><b>Desktop Support</b></h4>
                 <div id="acca_london">
                   <h5><b>ACCA,</b> London</h5>
                   <h7 class="title is-7">Oct 2013</h7>
@@ -171,7 +153,7 @@
               </div>
               <br>
               <div class="work-entry">
-                <h4><span class="icon"><a onclick="hideDiv('napier')" id="napier_caret" class="fa fa-caret-down"></a></span><b>Robotics Bootcamp</b></h4>
+                <h4><span class="icon"><a onclick="hideDiv('napier')" id="napier_caret" class="fa fa-caret-down"></a></span><b>Short Intern</b></h4>
                 <div id="napier">
                   <h5><b>NAPIER University,</b> Edinburgh</h5>
                   <h7 class="title is-7">June 2013</h7>
@@ -182,19 +164,84 @@
               </div>
 
               <hr>
-              <h3 id="skills" class="title is-3">
-                  <span class="icon is-large">
-                    <i class="fa fa-code"></i>
-                  </span> &nbsp;
-                  <u>Skills</u></h3>
-              <div class="columns">
-                <div class="column">
-                </div>
-                <div class="column">
-                </div>
-                <div class="column">
+              <h3 id="skills" class="title is-3"><span class="icon is-large"><i class="fa fa-code"></i></span> &nbsp;
+              <u>Skills</u></h3>
+              <div class="skill-entry">
+                <h4><span class="icon"><a onclick="hideDiv('prog_langs')" id="prog_langs_caret" class="fa fa-caret-down"></a></span><b>Programming Languages</b></h4>
+                <div id="prog_langs">
+                  <div class="content">
+                    <blockquote>
+                    <ul>
+                      <li>Java</li>
+                      <li>C#</li>
+                      <li>C++</li>
+                      <li>C</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>PHP</li>
+                      <li>Python</li>
+                      <li>MIPS</li>
+                    </ul>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
+              <br>
+              <div class="skill-entry">
+                <h4><span class="icon"><a onclick="hideDiv('technologies')" id="technologies_caret" class="fa fa-caret-down"></a></span><b>Familiar Dev Concepts/Technologies</b></h4>
+                <div id="technologies">
+                  <div class="content">
+                    <blockquote>
+                    <ul>
+                      <li>Object-Oriented Design</li>
+                      <li>.NET</li>
+                      <li>MVC</li>
+                      <li><a href="https://github.com/nodejs/node">nodejs <span class="icon is-small"><i class="fa fa-link"></i></span></a></li>
+                      <li><a href="https://github.com/facebook/react-native">React-Native <span class="icon is-small"><i class="fa fa-link"></i></span></a></li>
+                      <li><a href="https://github.com/balderdashy/sails">sailsjs <span class="icon is-small"><i class="fa fa-link"></i></span></a></li>
+                      <li><a href="https://github.com/electron/electron">electron (Minimal usage) <span class="icon is-small"><i class="fa fa-link"></i></span></a></li>
+                    </ul>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+              <h3 id="projects" class="title is-3"><span class="icon is-large"><a href="https://github.com/acwilson96" class="fa fa-github"></a></span>&nbsp;<a href="https://github.com/acwilson96"> <u>Projects</u> <span class="icon"><i class="fa fa-link"></i></span></a></h3>
+              <div class="work-entry">  
+                <h4><span class="icon"><a onclick="hideDiv('this_page')" id="this_page_caret" class="fa fa-caret-down"></a></span><b><a href="https://github.com/acwilson96/acwilson96.github.io">This Page! <span class="icon is-small"><i class="fa fa-link"></i></span></a></b></h4>
+                <div id="this_page">
+                  <div class="content">
+                    <blockquote>
+                      A single web page that acts as index in to who I am and what I have been working on!
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="work-entry">  
+                <h4><span class="icon"><a onclick="hideDiv('sup_script')" id="sup_script_caret" class="fa fa-caret-down"></a></span><b><a href="https://github.com/acwilson96/sup_script">sup_script <span class="icon is-small"><i class="fa fa-link"></i></span></a></b></h4>
+                <div id="sup_script">
+                  <div class="content">
+                    <blockquote>
+                      A FireFox extension that will automate actions on supremenewyork.com/shop in order to check out items quickly. Includes some minor work on spoofing Google Recaptcha.
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="work-entry">  
+                <h4><span class="icon"><a onclick="hideDiv('unet')" id="unet_caret" class="fa fa-caret-down"></a></span><b><a href="https://github.com/acwilson96/unet">unet (WIP) <span class="icon is-small"><i class="fa fa-link"></i></span></a></b></h4>
+                <div id="unet">
+                  <div class="content">
+                    <blockquote>
+                        Multi-platform application that provides a 'universal account' for services such as instant messaging, cloud storage. More features to be determined. Project started as POC to learn web technologies/concepts.
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <br>
 
             </section>
           </div>
@@ -204,15 +251,25 @@
 
   </body>
   <script>
-	  
+
+    function populatePre(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            document.getElementById('me_js').textContent = this.responseText;
+        };
+        xhr.open('GET', url);
+        xhr.send();
+    }
+    populatePre('/me.js');
+
     function toggleContents() {
         if (document.getElementById("contents_pane").style.display == 'none') {
-			document.getElementById("contents_pane").style.display = 'inline';
-			document.getElementById("contents_minimax").innerText = '-';
-		} else {
-			document.getElementById("contents_pane").style.display = 'none';
-			document.getElementById("contents_minimax").innerText = '+';
-		}
+          document.getElementById("contents_pane").style.display = 'inline';
+          document.getElementById("contents_minimax").innerText = '-';
+        } else {
+          document.getElementById("contents_pane").style.display = 'none';
+          document.getElementById("contents_minimax").innerText = '+';
+        }
     }
 
     function hideDiv(divID) {
