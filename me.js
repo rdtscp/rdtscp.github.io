@@ -1,4 +1,4 @@
-
+  /* JavaScript constant with info about me */
   const alex = {
       name: 'Alexander Wilson',
       dob: '29-01-1996',
@@ -19,4 +19,4 @@
         'dota_2'
       ]
     }
-    
+
