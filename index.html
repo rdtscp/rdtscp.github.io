@@ -2,7 +2,7 @@
 <html>
   <head>
    <meta charset="utf-8">
-    <title>alex@wilson: ~$ </title>
+    <title>alex </title>
     <link rel="icon" href="user.png" type="image/png" sizes="16x16">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
@@ -70,7 +70,7 @@
         
               
               <div class="box" style="padding: 5px;">
-                <pre id="me_js"></pre>
+                  <pre id="me_js"></pre>
               </div>
               <br>
               <h3 id="education" class="title is-3">
@@ -171,17 +171,18 @@
                 <div id="prog_langs">
                   <div class="content">
                     <blockquote>
+                      Click <span class="icon is-small"><i class="fa fa-info-circle"></i></span> for example uses.
                     <ul>
-                      <li>Java</li>
-                      <li>C#</li>
-                      <li>C++</li>
-                      <li>C</li>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>PHP</li>
-                      <li>Python</li>
-                      <li>MIPS</li>
+                      <li>Java<span class="icon is-small"><a onclick="alert(java_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>C#<span class="icon is-small"><a onclick="alert(cs_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>C++<span class="icon is-small"><a onclick="alert(cpp_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>C<span class="icon is-small"><a onclick="alert(c_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>HTML<span class="icon is-small"><a onclick="alert(html_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>CSS<span class="icon is-small"><a onclick="alert(css_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>JavaScript<span class="icon is-small"><a onclick="alert(js_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>PHP<span class="icon is-small"><a onclick="alert(php_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>Python<span class="icon is-small"><a onclick="alert(py_example);" class="fa fa-info-circle"></a></span></li>
+                      <li>MIPS<span class="icon is-small"><a onclick="alert(mips_example);" class="fa fa-info-circle"></a></span></li>
                     </ul>
                     </blockquote>
                   </div>
@@ -251,6 +252,17 @@
 
   </body>
   <script>
+
+    var java_example  = ' - UDP Networking App to send files using various UDP protocols. \n\n - Stochastic Simulator for Bin disposal and lorry routing/collection.';
+    var cs_example    = ' - Worked with existing large scale project, tasked with understanding and re-using classes and code base.'
+    var cpp_example   = ' - Worked with existing large scale project, had to make slight modification to code. \n\n - With INTEL PIN Tool to implement Branch Instruction prediction techniques. \n\n - With INTEL PIN Tool to implement Cache Prefetching techniques. \n\n - With University of Edinburgh InfOS to implement page-based memory allocator. \n\n - With University of Edinburgh InfOS to implement file-system driver.';
+    var c_example     = ' - Looked at stack structure, and stack frames, and exploitation and detection of buffer overflows. \n\n - To implement a word finder that would count occurences of sub-strings/chars. Then used in a MIPS coursework. \n\n - To implement a palindrome finder. Then used in a MIPS coursework. \n\n - To implement a cache simulator to understand caches.';
+    var html_example  = ' - This page! \n\n - sup_script required learning about DOM and manipulation of DOM. \n\n - Other webpages that are yet to come.';
+    var css_example   = ' - This page! \n\n - Other webpages that are yet to come.';
+    var js_example    = ' - This page! \n\n - Backend JS using Nodejs \n\n - sup_script required learning javascript, and how to manipulate DOM with it. \n\n - Other webpages that are yet to come.';
+    var php_example   = ' - sup_script has a backend settings page written in PHP, purely to learn about php. \n\n - Played with Laravel and PHP while learning MVC. \n\n - Created a file upload service hosted on my raspberry pi for my flatmates to use to backup work over local network.';
+    var py_example    = ' - Used OpenCV to implement image processing techniques. \n\n - With LEGO ev3 to create a PID controller for a lego robot.';
+    var mips_example  = ' - To implement a word finder that would count occurences of sub-strings/chars. Followup from a C coursework. \n\n - To implement a palindrome finder. Followup from a C coursework.';
 
     function populatePre(url) {
         var xhr = new XMLHttpRequest();
