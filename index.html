@@ -207,10 +207,10 @@
     function toggleContents() {
         if (document.getElementById("contents_pane").style.display == 'none') {
 	    document.getElementById("contents_pane").style.display = 'inline';
-	    document.getElementById("contents_minimax").innerText = '-';
+	    document.getElementById("contents_minimax").value = '-';
 	} else {
 	    document.getElementById("contents_pane").style.display = 'none';
-	    document.getElementById("contents_minimax").innerText = '+';
+	    document.getElementById("contents_minimax").value = '+';
 	}
     }
 
