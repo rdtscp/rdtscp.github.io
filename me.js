@@ -13,6 +13,7 @@
             'web_dev',
             'computer_architecture',
             'programming',
+            'sudoku',
             'movies',
             'skateboarding',
             'bmxing',
