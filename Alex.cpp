@@ -12,15 +12,15 @@
               std::string loc                     = "Edinburgh, United Kingdom";
 
               std::vector<std::string> interests  = {
-                  "Computer Architecture",
-                  "Code Optimisation",
-                  "Computer Security",
-                  "Software Architecture",
-                  "Programming"
+                  "Computer Architecture", "Code Optimisation",
+                  "Computer Security", "Software Architecture"
               };
 
-              std::vector<std::string> hobbies  = { "Skiing", "Sudoku", "Skateboarding" };
-              
+              std::vector<std::string> hobbies    = {
+                  "Programming", "Sudoku",
+                  "Skiing", "Skateboarding"
+              };
+
               Alexander() {
                   unix_dob = 822873600;           // Constructed on 29-01-1996
               }
