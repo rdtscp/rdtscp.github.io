@@ -83,7 +83,7 @@
         
               
               <div class="box" style="padding: 5px; margin: 20px;">
-                  <pre id="me_js" class="prettyprint"></pre>
+                  <pre id="me_code" class="prettyprint lang-CPP"></pre>
               </div>
               <br>
 
@@ -340,7 +340,7 @@
     function populatePre(url) {
         var xhr = new XMLHttpRequest();
         xhr.onload = function () {
-            document.getElementById('me_js').textContent = this.responseText;
+            document.getElementById('me_code').textContent = this.responseText;
         };
         xhr.open('GET', url);
         xhr.send();
