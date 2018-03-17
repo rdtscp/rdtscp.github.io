@@ -6,7 +6,7 @@
       /* c++ Class representing a bit of me */
       class Alexander : public Person {
           private:
-              std::string my_email   = "acwilson96@protonmail.com";
+              std::string my_email                = "acwilson96@protonmail.com";
           public:
               std::time_t unix_dob;
               std::string name                    = "Alexander Wilson";
