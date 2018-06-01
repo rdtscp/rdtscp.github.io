@@ -1,16 +1,15 @@
 {
-  "short_name": "alex@wilson: ~$",
-  "name": "acwilson96.github.io",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "terminal.png",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/x-icon"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "homepage" : "https://acwilson96.github.io"
+  "background_color": "#ffffff"
 }
