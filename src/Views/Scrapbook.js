@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Heading } from '../Components/';
+// import { Heading } from '../Components/';
 
 class Scrapbook extends Component {
   render() {
     return (
       <div>
-        <Heading text="Scrapbook" />
+        {/* <Heading text="Scrapbook" /> */}
         
       </div>
     );
