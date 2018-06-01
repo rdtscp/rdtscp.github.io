@@ -5,8 +5,11 @@ class Scrapbook extends Component {
   render() {
     return (
       <div>
-        {/* <Heading text="Scrapbook" /> */}
-        
+        <div className="home-container text-center test">
+          <div className="title is-1 test">
+            Coming Soon...
+          </div>
+        </div>
       </div>
     );
   }
