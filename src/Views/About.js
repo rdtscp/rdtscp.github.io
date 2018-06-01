@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Heading } from '../Components/';
 
 class About extends Component {
   render() {
     return (
-      <div> About View </div>
+      <Heading text="About" />
     );
   }
 }

@@ -1,0 +1,16 @@
+.centered {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.center-piece {
+    background-color: #f2f0f0;
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 20%;
+    right: 20%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
