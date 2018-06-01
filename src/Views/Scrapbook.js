@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Heading } from '../Components/';
 
 class Scrapbook extends Component {
   render() {
