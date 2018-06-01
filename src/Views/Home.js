@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import { Heading, SubHeading } from '../Components/';
-import { Link } from "react-router-dom";
 
 import '../styles.css';
 
@@ -19,9 +17,9 @@ class Home extends Component {
           </div>
           <br />
           <div className="link-list test">
-            <Link to="/about">CV/Resume</Link>
+            <a href="/about">CV/Resume</a>
             <hr />
-            <Link to="/scrapbook">Scrapbook</Link>
+            <a href="/scrapbook">Scrapbook</a>
           </div>
 
 
