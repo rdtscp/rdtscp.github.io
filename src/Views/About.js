@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { EducationEntry, WorkEntry, SkillList, Project } from '../Components/';
 
+import cvpdf from '../Content/acwilson96.pdf';
+
+
 class About extends Component {
   render() {
     return (
@@ -19,7 +22,7 @@ class About extends Component {
               <span class="icon"><i class="fa fa-terminal"></i></span>Software Developer
               </h2>
               <h2 class="subtitle">
-                  <a href="/acwilson96.pdf">Download</a>
+                  <a href={cvpdf} target = "_blank">Download</a>
               </h2>
             </div>
           </div>
