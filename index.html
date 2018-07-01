@@ -56,5 +56,12 @@
       xhttp.send();
       console.log("Pre-Fetched Resume");
     </script>
+    <script>
+      console.log("Sending Analytics");
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "https://acwilson96-activity-tracker.herokuapp.com/visit_url?target=" + window.location.href, true);
+      xhttp.send();
+      console.log("Sent Analytics");
+    </script>
   </body>
 </html>
