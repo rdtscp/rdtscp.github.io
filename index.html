@@ -59,9 +59,9 @@
     <script>
       console.log("Sending Analytics");
       console.log("Referrer: " + document.referrer);
-      // var xhttp = new XMLHttpRequest();
-      // xhttp.open("GET", "https://acwilson96-activity-tracker.herokuapp.com/visit_url?target=" + window.location.href, true);
-      // xhttp.send();
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "https://acwilson96-activity-tracker.herokuapp.com/visit_url?target=" + window.location.href, true);
+      xhttp.send();
       console.log("Sent Analytics");
     </script>
   </body>
